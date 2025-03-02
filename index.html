@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de usuário</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon.png" sizes="128x128" type="image/png">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Gestão de usuário</h1>
+
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="Adicione uma tarefa" required>
+            <input type="text" id="cargo-input" placeholder="Cargo do usuário" required>
+            <button type="submit">Adicionar</button>
+        </form>
+
+        <div class="filters">
+            <select id="status-filter">
+                <option value="">Todos os Status</option>
+                <option value="pendente">Pendente</option>
+                <option value="em progresso">Em Progresso</option>
+                <option value="concluída">Concluída</option>
+            </select>
+
+            <input type="text" id="search-input" placeholder="Buscar por tarefa..." />
+            <input type="date" id="date-filter" />
+        </div>
+
+        <ul id="task-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
